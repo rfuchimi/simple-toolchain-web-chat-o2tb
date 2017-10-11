@@ -64,8 +64,7 @@ var chatbot = {
                             if (err) {
                                 console.log("Error in sending message: ", err);
                                 return callback(err);
-                            }else{
-                                
+                            }
                             var conv = data.context.conversation_id;
                             console.log("Got response from Ana: ", JSON.stringify(data));
 //                            if (data.context.system.dialog_turn_counter > 1) {
@@ -76,7 +75,6 @@ var chatbot = {
 //                            else {
                                 return callback(null, data);
 //                            }
-                        }
                     });
             }
         });
